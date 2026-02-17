@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speisekarte – Bistrorante</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="site-header" id="header">
+        <div class="container header-inner">
+            <a href="index.html" class="logo">
+                <span class="logo-icon">🍷</span>
+                <span class="logo-text">Bistrorante</span>
+            </a>
+            <nav class="main-nav" id="mainNav">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="speisekarte.html" class="nav-link active">Speisekarte</a>
+                <a href="catering.html" class="nav-link">Catering</a>
+                <a href="galerie.html" class="nav-link">Galerie</a>
+                <a href="kontakt.html" class="nav-link">Kontakt</a>
+            </nav>
+            <button class="menu-toggle" id="menuToggle" aria-label="Menü öffnen">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <section class="page-hero">
+        <div class="container">
+            <h1>Speisekarte</h1>
+            <p>La nostra cucina</p>
+        </div>
+    </section>
+
+    <section class="menu-section">
+        <div class="container">
+
+            <div class="menu-categories">
+                <button class="menu-cat-btn active" data-category="all">Alle</button>
+                <button class="menu-cat-btn" data-category="antipasti">Antipasti</button>
+                <button class="menu-cat-btn" data-category="pizza">Pizza</button>
+                <button class="menu-cat-btn" data-category="pasta">Pasta</button>
+                <button class="menu-cat-btn" data-category="carne">Carne & Pesce</button>
+                <button class="menu-cat-btn" data-category="dolci">Dolci</button>
+                <button class="menu-cat-btn" data-category="bevande">Getränke</button>
+            </div>
+
+            <div class="menu-category" data-category="antipasti">
+                <h2 class="menu-category-title">Antipasti</h2>
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <h4>Bruschetta Classica</h4>
+                            <p>Geröstetes Ciabatta mit frischen Tomaten, Knoblauch, Basilikum und Olivenöl</p>
+                            <span class="menu-allergen-tag">A, O</span>
+                        </div>
+                        <span class="menu-item-price">7,90 €</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <h4>Carpaccio di Manzo</h4>
+                            <p>Hauchdünn geschnittenes Rinderfilet mit Rucola, Parmesan und Zitronendressing</p>
+                            <span class="menu-allergen-tag">G</span>
+                        </div>
+                        <span class="menu-item-price">14,90 €</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <h4>Caprese</h4>
+                            <p>Büffelmozzarella mit Tomaten, frischem Basilikum und Balsamico-Reduktion</p>
+                            <span class="menu-allergen-tag">G</span>
+                        </div>
+                        <span class="menu-item-price">11,50 €</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <h4>Antipasto Misto</h4>
+                            <p>Gemischte Vorspeisenplatte mit Prosciutto, Salami, eingelegtem Gemüse und Oliven</p>
+                            <span class="menu-allergen-tag">G</span>
+                        </div>
+                        <span class="menu-item-price">16,90 €</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <h4>Minestrone</h4>
+                            <p>Italienische Gemüsesuppe mit saisonalem Gemüse und Pesto</p>
+                            <span class="menu-allergen-tag">A, I</span>
+                        </div>
+                        <span class="menu-item-price">8,50 €</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <h4>Calamari Fritti</h4>
+                            <p>Knusprig frittierte Tintenfischringe mit Aioli und Zitrone</p>
+                            <span class="menu-allergen-tag">A, C, R</span>
+                        </div>
+                        <span class="menu-item-price">12,90 €</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-category" data-category="pizza">
+                <h2 class="menu-category-title">Pizza</h2>
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <h4>Margherita</h4>
+                            <p>Tomatensauce, Mozzarella, frischer Basilikum</p>
+                            <span class="menu-allergen-tag">A, G</span>
+                        </div>
+                        <span class="menu-item-price">10,90 €</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <h4>Diavola</h4>
+                            <p>Tomatensauce, Mozzarella, scharfe Salami, Peperoni</p>
+                            <span class="menu-allergen-tag">A, G</span>
+                        </div>
+                        <span class="menu-item-price">13,50 €</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <h4>Quattro Formaggi</h4>
+                            <p>Mozzarella, Gorgonzola, Parmesan, Fontina</p>
+                            <span class="menu-allergen-tag">A, G</span>
+                        </div>
+                        <span class="menu-item-price">14,50 €</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <h4>Prosciutto e Rucola</h4>
+                            <p>Tomatensauce, Mozzarella, Parmaschinken, Rucola, Parmesanspäne</p>
+                            <span class="menu-allergen-tag">A, G</span>
+                        </div>
+                        <span class="menu-item-price">15,50 €</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <h4>Frutti di Mare</h4>
+                            <p>Tomatensauce, Meeresfrüchte, Knoblauch, Petersilie</p>
+                            <span class="menu-allergen-tag">A, B, R</span>
+                        </div>
+                        <span class="menu-item-price">16,90 €</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <h4>Vegetariana</h4>
+                            <p>Tomatensauce, Mozzarella, Paprika, Zucchini, Aubergine, Oliven</p>
+                            <span class="menu-allergen-tag">A, G</span>
+                        </div>
+                        <span class="menu-item-price">13,90 €</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-category" data-category="pasta">
+                <h2 class="menu-category-title">Pasta</h2>
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <h4>Spaghetti Carbonara</h4>
+                            <p>Guanciale, Eigelb, Pecorino Romano, schwarzer Pfeffer</p>
+                            <span class="menu-allergen-tag">A, C, G</span>
+                        </div>
+                        <span class="menu-item-price">14,50 €</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <h4>Tagliatelle al Ragù</h4>
+                            <p>Hausgemachte Bandnudeln mit traditionellem Bolognese-Ragout</p>
+                            <span class="menu-allergen-tag">A, C, G</span>
+                        </div>
+                        <span class="menu-item-price">15,50 €</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <h4>Penne all'Arrabbiata</h4>
+                            <p>Penne mit feuriger Tomatensauce, Knoblauch und Peperoncino</p>
+                            <span class="menu-allergen-tag">A</span>
+                        </div>
+                        <span class="menu-item-price">12,90 €</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <h4>Risotto ai Funghi Porcini</h4>
+                            <p>Cremiges Risotto mit frischen Steinpilzen und Parmesan</p>
+                            <span class="menu-allergen-tag">G</span>
+                        </div>
+                        <span class="menu-item-price">17,50 €</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <h4>Lasagne della Casa</h4>
+                            <p>Traditionelle Lasagne mit Ragout, Béchamel und gratiniertem Käse</p>
+                            <span class="menu-allergen-tag">A, C, G</span>
+                        </div>
+                        <span class="menu-item-price">15,90 €</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <h4>Gnocchi al Pesto</h4>
+                            <p>Hausgemachte Kartoffelgnocchi mit Basilikumpesto und Pinienkernen</p>
+                            <span class="menu-allergen-tag">A, G, H</span>
+                        </div>
+                        <span class="menu-item-price">14,90 €</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-category" data-category="carne">
+                <h2 class="menu-category-title">Carne & Pesce</h2>
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <h4>Saltimbocca alla Romana</h4>
+                            <p>Kalbsschnitzel mit Salbei und Parmaschinken in Weißweinsauce</p>
+                            <span class="menu-allergen-tag">G</span>
+                        </div>
+                        <span class="menu-item-price">22,90 €</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <h4>Ossobuco alla Milanese</h4>
+                            <p>Geschmorte Kalbshaxe mit Gremolata, dazu Safranrisotto</p>
+                            <span class="menu-allergen-tag">G</span>
+                        </div>
+                        <span class="menu-item-price">26,90 €</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <h4>Pollo alla Parmigiana</h4>
+                            <p>Überbackenes Hähnchenbrustfilet mit Tomatensauce und Mozzarella</p>
+                            <span class="menu-allergen-tag">A, C, G</span>
+                        </div>
+                        <span class="menu-item-price">18,90 €</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <h4>Branzino al Forno</h4>
+                            <p>Im Ofen gebackener Wolfsbarsch mit Kräutern, Kirschtomaten und Oliven</p>
+                            <span class="menu-allergen-tag">D</span>
+                        </div>
+                        <span class="menu-item-price">24,90 €</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <h4>Tagliata di Manzo</h4>
+                            <p>Gegrilltes Rinderfilet, aufgeschnitten auf Rucola mit Parmesan und Balsamico</p>
+                            <span class="menu-allergen-tag">G</span>
+                        </div>
+                        <span class="menu-item-price">28,90 €</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <h4>Gamberi alla Griglia</h4>
+                            <p>Gegrillte Riesengarnelen mit Knoblauch, Zitrone und Kräuterbutter</p>
+                            <span class="menu-allergen-tag">B, G</span>
+                        </div>
+                        <span class="menu-item-price">23,90 €</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-category" data-category="dolci">
+                <h2 class="menu-category-title">Dolci</h2>
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <h4>Tiramisù della Casa</h4>
+                            <p>Klassisches Tiramisù mit Mascarpone, Espresso und Kakao</p>
+                            <span class="menu-allergen-tag">A, C, G</span>
+                        </div>
+                        <span class="menu-item-price">8,90 €</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <h4>Panna Cotta</h4>
+                            <p>Vanille-Panna-Cotta mit Beerensauce</p>
+                            <span class="menu-allergen-tag">G</span>
+                        </div>
+                        <span class="menu-item-price">7,90 €</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <h4>Affogato al Caffè</h4>
+                            <p>Vanilleeis übergossen mit heißem Espresso</p>
+                            <span class="menu-allergen-tag">G</span>
+                        </div>
+                        <span class="menu-item-price">6,50 €</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <h4>Cannoli Siciliani</h4>
+                            <p>Knusprige Teigröllchen gefüllt mit Ricottacreme und kandierten Früchten</p>
+                            <span class="menu-allergen-tag">A, C, G, H</span>
+                        </div>
+                        <span class="menu-item-price">9,50 €</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-category" data-category="bevande">
+                <h2 class="menu-category-title">Getränke</h2>
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <h4>Acqua Minerale</h4>
+                            <p>Still oder sprudelnd, 0,75 l</p>
+                        </div>
+                        <span class="menu-item-price">4,50 €</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <h4>Limonata della Casa</h4>
+                            <p>Hausgemachte Limonade mit Zitrone und Minze</p>
+                        </div>
+                        <span class="menu-item-price">5,50 €</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <h4>Chianti Classico</h4>
+                            <p>Toskana, 0,2 l / 0,75 l</p>
+                            <span class="menu-allergen-tag">O</span>
+                        </div>
+                        <span class="menu-item-price">7,50 / 28 €</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <h4>Pinot Grigio</h4>
+                            <p>Venetien, 0,2 l / 0,75 l</p>
+                            <span class="menu-allergen-tag">O</span>
+                        </div>
+                        <span class="menu-item-price">6,90 / 26 €</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <h4>Espresso / Cappuccino</h4>
+                            <p>Italienischer Kaffee aus frisch gemahlenen Bohnen</p>
+                            <span class="menu-allergen-tag">G</span>
+                        </div>
+                        <span class="menu-item-price">2,80 / 4,20 €</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <h4>Aperol Spritz</h4>
+                            <p>Aperol, Prosecco, Soda, Orange</p>
+                            <span class="menu-allergen-tag">O</span>
+                        </div>
+                        <span class="menu-item-price">8,50 €</span>
+                    </div>
+                </div>
+            </div>
+
+            <p class="center" style="margin-top: 48px; color: var(--color-text-light);">
+                Alle Preise inkl. MwSt. · Allergeninformationen finden Sie auf unserer
+                <a href="allergene.html">Allergene-Seite</a>.
+            </p>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <span class="logo-icon">🍷</span>
+                    <span class="logo-text">Bistrorante</span>
+                    <p>Authentische italienische Küche seit 1998.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Navigation</h4>
+                    <a href="index.html">Home</a>
+                    <a href="speisekarte.html">Speisekarte</a>
+                    <a href="catering.html">Catering</a>
+                    <a href="galerie.html">Galerie</a>
+                    <a href="kontakt.html">Kontakt & Anfahrt</a>
+                </div>
+                <div class="footer-links">
+                    <h4>Rechtliches</h4>
+                    <a href="impressum.html">Impressum</a>
+                    <a href="datenschutz.html">Datenschutzerklärung</a>
+                    <a href="allergene.html">Allergene</a>
+                </div>
+                <div class="footer-social">
+                    <h4>Folgen Sie uns</h4>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook">Facebook</a>
+                        <a href="#" aria-label="Instagram">Instagram</a>
+                        <a href="#" aria-label="TripAdvisor">TripAdvisor</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Bistrorante. Alle Rechte vorbehalten.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="js/main.js"></script>
+</body>
+</html>

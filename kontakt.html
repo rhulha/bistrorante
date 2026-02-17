@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt & Anfahrt – Bistrorante</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="site-header" id="header">
+        <div class="container header-inner">
+            <a href="index.html" class="logo">
+                <span class="logo-icon">🍷</span>
+                <span class="logo-text">Bistrorante</span>
+            </a>
+            <nav class="main-nav" id="mainNav">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="speisekarte.html" class="nav-link">Speisekarte</a>
+                <a href="catering.html" class="nav-link">Catering</a>
+                <a href="galerie.html" class="nav-link">Galerie</a>
+                <a href="kontakt.html" class="nav-link active">Kontakt</a>
+            </nav>
+            <button class="menu-toggle" id="menuToggle" aria-label="Menü öffnen">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <section class="page-hero">
+        <div class="container">
+            <h1>Kontakt & Anfahrt</h1>
+            <p>Wir freuen uns auf Ihren Besuch</p>
+        </div>
+    </section>
+
+    <section class="section" id="reservierung">
+        <div class="container">
+            <div class="contact-grid">
+                <div>
+                    <h2 class="section-title">Kontaktieren Sie uns</h2>
+                    <p class="section-subtitle">Siamo qui per voi</p>
+
+                    <div class="contact-info-item">
+                        <div class="contact-icon">📍</div>
+                        <div>
+                            <h4>Adresse</h4>
+                            <p>Musterstraße 42<br>12345 Musterstadt</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-info-item">
+                        <div class="contact-icon">📞</div>
+                        <div>
+                            <h4>Telefon</h4>
+                            <p><a href="tel:+4912345678">+49 123 456 78</a></p>
+                        </div>
+                    </div>
+
+                    <div class="contact-info-item">
+                        <div class="contact-icon">📧</div>
+                        <div>
+                            <h4>E-Mail</h4>
+                            <p><a href="mailto:info@bistrorante.de">info@bistrorante.de</a></p>
+                        </div>
+                    </div>
+
+                    <div class="contact-info-item">
+                        <div class="contact-icon">🕐</div>
+                        <div>
+                            <h4>Öffnungszeiten</h4>
+                            <p>Mo: Ruhetag<br>
+                            Di–Fr: 11:30–14:30 & 17:30–22:30<br>
+                            Sa: 17:00–23:00<br>
+                            So & Feiertag: 11:30–22:00</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <h2 class="section-title">Reservierung / Anfrage</h2>
+                    <p class="section-subtitle">Prenotazione</p>
+
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Name *</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">E-Mail *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="phone">Telefon</label>
+                                <input type="tel" id="phone" name="phone">
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Betreff</label>
+                                <select id="subject" name="subject">
+                                    <option value="reservierung">Tischreservierung</option>
+                                    <option value="catering">Catering-Anfrage</option>
+                                    <option value="event">Privatveranstaltung</option>
+                                    <option value="sonstiges">Sonstiges</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="date">Wunschdatum</label>
+                                <input type="date" id="date" name="date">
+                            </div>
+                            <div class="form-group">
+                                <label for="guests">Personenanzahl</label>
+                                <input type="number" id="guests" name="guests" min="1" max="100">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Ihre Nachricht *</label>
+                            <textarea id="message" name="message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Nachricht senden</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="map-container" id="anfahrt">
+                <p>Hier können Sie eine Google Maps Karte einbinden.<br>
+                Ersetzen Sie diesen Bereich durch ein &lt;iframe&gt; mit Ihrer Google Maps Einbettung.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section highlights" id="anfahrt-info">
+        <div class="container">
+            <h2 class="section-title center">Anfahrt</h2>
+            <p class="section-subtitle center">Come raggiungerci</p>
+            <div class="highlights-grid" style="grid-template-columns: repeat(3, 1fr);">
+                <div class="highlight-card">
+                    <div class="highlight-icon">🚗</div>
+                    <h3>Mit dem Auto</h3>
+                    <p>Über die A1, Ausfahrt Musterstadt-Zentrum. Kostenlose Parkplätze stehen direkt hinter dem Restaurant zur Verfügung.</p>
+                </div>
+                <div class="highlight-card">
+                    <div class="highlight-icon">🚇</div>
+                    <h3>Mit Bus & Bahn</h3>
+                    <p>Haltestelle „Marktplatz" (Linien 3, 7, 12) – nur 2 Minuten Fußweg. Ab Hauptbahnhof: Linie 7 Richtung Altstadt.</p>
+                </div>
+                <div class="highlight-card">
+                    <div class="highlight-icon">🚲</div>
+                    <h3>Mit dem Fahrrad</h3>
+                    <p>Fahrradständer befinden sich direkt vor dem Restaurant. Wir sind Teil des städtischen Radwegenetzes.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <span class="logo-icon">🍷</span>
+                    <span class="logo-text">Bistrorante</span>
+                    <p>Authentische italienische Küche seit 1998.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Navigation</h4>
+                    <a href="index.html">Home</a>
+                    <a href="speisekarte.html">Speisekarte</a>
+                    <a href="catering.html">Catering</a>
+                    <a href="galerie.html">Galerie</a>
+                    <a href="kontakt.html">Kontakt & Anfahrt</a>
+                </div>
+                <div class="footer-links">
+                    <h4>Rechtliches</h4>
+                    <a href="impressum.html">Impressum</a>
+                    <a href="datenschutz.html">Datenschutzerklärung</a>
+                    <a href="allergene.html">Allergene</a>
+                </div>
+                <div class="footer-social">
+                    <h4>Folgen Sie uns</h4>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook">Facebook</a>
+                        <a href="#" aria-label="Instagram">Instagram</a>
+                        <a href="#" aria-label="TripAdvisor">TripAdvisor</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Bistrorante. Alle Rechte vorbehalten.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="js/main.js"></script>
+</body>
+</html>

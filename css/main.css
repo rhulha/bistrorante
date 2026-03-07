@@ -67,7 +67,7 @@ a:hover {
     left: 0;
     right: 0;
     z-index: 1000;
-    background: rgba(26, 26, 26, 0.95);
+    background: var(--color-primary);
     backdrop-filter: blur(10px);
     transition: background var(--transition), box-shadow var(--transition);
 }
@@ -164,7 +164,7 @@ a:hover {
     align-items: center;
     justify-content: center;
     text-align: center;
-    background: linear-gradient(135deg, #1a1a1a 0%, #2d1b1b 50%, #1a2a1a 100%);
+    background: linear-gradient(180deg, var(--color-primary) 0%, var(--color-bg) 100%);
     overflow: hidden;
 }
 
@@ -217,19 +217,19 @@ a:hover {
 
 .page-hero {
     padding: 140px 0 60px;
-    background: linear-gradient(135deg, #1a1a1a 0%, #2d1b1b 100%);
+    background: linear-gradient(180deg, var(--color-primary) 0%, var(--color-bg) 100%);
     text-align: center;
 }
 
 .page-hero h1 {
     font-family: var(--font-heading);
-    color: var(--color-white);
+    color: var(--color-dark);
     font-size: clamp(2rem, 5vw, 3.5rem);
     margin-bottom: 8px;
 }
 
 .page-hero p {
-    color: var(--color-accent);
+    color: var(--color-dark);
     font-family: var(--font-heading);
     font-style: italic;
     font-size: 1.1rem;
@@ -1005,7 +1005,7 @@ a:hover {
         top: 72px;
         left: 0;
         right: 0;
-        background: rgba(26, 26, 26, 0.98);
+        background: var(--color-primary);
         flex-direction: column;
         padding: 16px 24px;
         transform: translateY(-100%);

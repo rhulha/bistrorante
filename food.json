@@ -1,0 +1,77 @@
+{
+  "salate_gemuese": [
+    { "nr": 108, "name": "Insalatina di contorno", "price": 5.50 },
+    { "nr": 60,  "name": "Insalata Mista", "price": 7.50 },
+    { "nr": 61,  "name": "Insalata Capricciosa", "price": 9.50 },
+    { "nr": 62,  "name": "Insalata Riva del Garda", "price": 10.50 },
+    { "nr": 63,  "name": "Insalata della Casa", "price": 12.50 },
+    { "nr": 64,  "name": "Insalata del Saraceno", "price": 10.50 },
+    { "nr": 65,  "name": "Insalata di Pomodori, Cipolle e Tonno", "price": 9.50 },
+    { "nr": 128, "name": "Insalata Pastum", "price": 9.50 },
+    { "nr": 115, "name": "Verdure al Forno", "price": 12.50 }
+  ],
+  "vorspeisen": [
+    { "nr": 68,  "name": "Antipasto Michelangelo", "price": 11.50 },
+    { "nr": 72,  "name": "Antipasto di Mare", "price": 11.50 },
+    { "nr": 140, "name": "Carpaccio di Bresaola", "price": 10.50 },
+    { "nr": 141, "name": "Antipasto Vegetale", "price": 10.50 },
+    { "nr": 73,  "name": "Antipasto Caprese", "price": 10.50 },
+    { "nr": 103, "name": "Panini di Pizza", "price": 5.50 }
+  ],
+  "focaccie_bruschette": [
+    { "nr": 1,   "name": "Focaccia", "price": 5.00 },
+    { "nr": 2,   "name": "Focaccia Passesana", "price": 7.00 },
+    { "nr": 126, "name": "Focaccia del Contadino", "price": 8.00 },
+    { "nr": 3,   "name": "Bruschetta Caprese", "price": 9.50 },
+    { "nr": 117, "name": "Bruschetta Cilentana", "price": 9.50 }
+  ],
+  "pizza": [
+    { "nr": 4,   "name": "Pizza Regina Margherita", "price": 8.50 },
+    { "nr": 5,   "name": "Pizza Tonno e Cipolle", "price": 10.00 },
+    { "nr": 6,   "name": "Pizza Prosciutto", "price": 9.00 },
+    { "nr": 7,   "name": "Pizza al Salame", "price": 9.00 },
+    { "nr": 8,   "name": "Pizza Peperoni", "price": 9.50 },
+    { "nr": 9,   "name": "Pizza Hawaii", "price": 9.50 },
+    { "nr": 10,  "name": "Pizza Napoleone", "price": 10.00 },
+    { "nr": 12,  "name": "Pizza alla Zingara", "price": 10.50 },
+    { "nr": 13,  "name": "Pizza Braccio di Ferro", "price": 10.00 },
+    { "nr": 14,  "name": "Pizza Maruzzella", "price": 9.50 },
+    { "nr": 15,  "name": "Pizza Pulcinella", "price": 10.00 },
+    { "nr": 16,  "name": "Pizza Calzone", "price": 10.50 },
+    { "nr": 17,  "name": "Pizza Ortolana", "price": 10.50 },
+    { "nr": 18,  "name": "Pizza del Marinaio", "price": 13.50 },
+    { "nr": 19,  "name": "Pizza Norvegese", "price": 13.50 },
+    { "nr": 21,  "name": "Pizza Vulcano", "price": 11.50 },
+    { "nr": 22,  "name": "Pizza Primavera", "price": 12.50 },
+    { "nr": 23,  "name": "Pizza Mediterranea", "price": 12.50 },
+    { "nr": 24,  "name": "Pizza Dolomiti", "price": 12.50 },
+    { "nr": 25,  "name": "Pizza 4 Formaggi", "price": 11.00 },
+    { "nr": 26,  "name": "Pizza 4 Stagioni", "price": 10.00 },
+    { "nr": 125, "name": "Familienpizza (ca. 40 cm)", "price": 25.00 }
+  ],
+  "wrap": [
+    { "nr": 137, "name": "Wrap Tonno", "price": 11.00 },
+    { "nr": 138, "name": "Wrap Pollo", "price": 13.00 },
+    { "nr": 139, "name": "Wrap Vegetale", "price": 11.00 }
+  ],
+  "nudel_gerichte": [
+    { "nr": 75,  "name": "Tortellini alla Panna", "price": 10.00 },
+    { "nr": 76,  "name": "Tortellini Gratinati", "price": 10.50 },
+    { "nr": 78,  "name": "Tagliatelle al Salmone", "price": 13.00 },
+    { "nr": 79,  "name": "Rigatoni all'arrabbiata", "price": 10.00 },
+    { "nr": 80,  "name": "Rigatoni al Curry", "price": 10.00 },
+    { "nr": 81,  "name": "Gnocchi alla Sorrentina", "price": 10.00 },
+    { "nr": 82,  "name": "Rigatoni ai 4 Formaggi", "price": 10.50 },
+    { "nr": 83,  "name": "Rigatoni al Forno", "price": 10.50 },
+    { "nr": 112, "name": "Rigatoni Cardinale", "price": 12.50 },
+    { "nr": 85,  "name": "Spaghetti del Carbonaro", "price": 11.50 },
+    { "nr": 86,  "name": "Spaghetti Bolognese", "price": 10.00 },
+    { "nr": 87,  "name": "Spaghetti Aglio Olio e Peperoncino", "price": 10.00 },
+    { "nr": 88,  "name": "Lasagna al Forno", "price": 11.00 }
+  ],
+  "fleisch_fischgerichte": [
+    { "nr": 91, "name": "Petto di Pollo alla Panna", "price": 18.50 },
+    { "nr": 95, "name": "Bistecca di Vitello alle Cipolle", "price": 24.50 },
+    { "nr": 97, "name": "Frittura di Calamari", "price": 19.50 }
+  ]
+}

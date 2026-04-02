@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍷</text></svg>">
+    <title>Get 10 – Michelangelo</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        .game-container {
+            position: relative;
+            width: 100%;
+            height: 600px;
+            max-width: 700px;
+            margin: 40px auto;
+            background: black;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        #gameCanvas {
+            width: 100%;
+            height: 100%;
+            display: block;
+        }
+
+        .game-credit {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 14px;
+            color: var(--color-text-light);
+        }
+
+        .game-credit a {
+            color: var(--color-primary);
+            text-decoration: none;
+        }
+
+        .game-credit a:hover {
+            text-decoration: underline;
+        }
+
+        .game-info {
+            background: var(--color-bg-light);
+            padding: 30px;
+            border-radius: 8px;
+            max-width: 700px;
+            margin: 0 auto 40px;
+            text-align: center;
+        }
+
+        .game-info h2 {
+            color: var(--color-primary);
+            margin-top: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="site-header" id="header">
+        <div class="container header-inner">
+            <a href="index.html" class="logo">
+                <img src="img/logo.png" alt="Michelangelo" class="logo-img">
+            </a>
+            <nav class="main-nav" id="mainNav">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="speisekarte.html" class="nav-link">Speisekarte</a>
+                <a href="catering.html" class="nav-link">Catering</a>
+                <a href="galerie.html" class="nav-link">Galerie</a>
+                <a href="get10.html" class="nav-link active">Get 10</a>
+                <a href="kontakt.html" class="nav-link">Kontakt</a>
+            </nav>
+            <button class="menu-toggle" id="menuToggle" aria-label="Menü öffnen">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <section class="section">
+        <div class="container">
+            <div class="game-info">
+                <h2>Spielanleitung</h2>
+                <p>Klicke auf zwei oder mehr Kacheln mit der gleichen Zahl, um sie zu kombinieren. Die Summe wächst mit jeder Kombination. Versuche, alle Kacheln zu kombinieren und erreiche die höchstmögliche Zahl!</p>
+            </div>
+
+            <div class="game-container">
+                <canvas id="gameCanvas"></canvas>
+            </div>
+
+            <div class="game-credit">
+                Get10Pro © <a href="https://www.hulha.net" target="_blank" rel="noopener">www.hulha.net</a> used with permission.
+            </div>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <span class="logo-icon">🍷</span>
+                    <span class="logo-text">Michelangelo</span>
+                    <p>Bistrorante &amp; Pizzeria – Familie Sangiovanni, Bad Salzschlirf.</p>
+                    <p><a href="mailto:info@bistrorante-michelangelo.de">info@bistrorante-michelangelo.de</a></p>
+                </div>
+                <div class="footer-links">
+                    <h4>Navigation</h4>
+                    <a href="index.html">Home</a>
+                    <a href="speisekarte.html">Speisekarte</a>
+                    <a href="catering.html">Catering</a>
+                    <a href="galerie.html">Galerie</a>
+                    <a href="get10.html">Get 10</a>
+                    <a href="kontakt.html">Kontakt & Anfahrt</a>
+                </div>
+                <div class="footer-links">
+                    <h4>Rechtliches</h4>
+                    <a href="impressum.html">Impressum</a>
+                    <a href="datenschutz.html">Datenschutzerklärung</a>
+                    <a href="allergene.html">Allergene</a>
+                </div>
+                <div class="footer-social">
+                    <h4>Folgen Sie uns</h4>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/Michelangelo-Bistrorante-Pizzeria-126734194174649/" aria-label="Facebook" target="_blank" rel="noopener">Facebook</a>
+                        <a href="https://www.instagram.com/michelangelo_bistrorante/" aria-label="Instagram" target="_blank" rel="noopener">Instagram</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Bistrorante &amp; Pizzeria „Michelangelo". Alle Rechte vorbehalten.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="js/main.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function(event) {
+            var bgcolors = ['', 'LawnGreen', 'DodgerBlue', 'orange', 'Tomato', 'DarkGreen',
+                            'DarkViolet', 'lightblue', 'red', 'blue', 'green', 'white'];
+            var fgcolors = ['', 'DarkGreen', 'DarkBlue', 'red', '#ff9e9e', 'LawnGreen',
+                            'Plum', 'Plum', 'Plum', 'Plum', 'Plum', 'Plum'];
+
+            var popSound = new Audio('audio/pop.wav');
+
+            var xTiles = 5;
+            var yTiles = 7;
+            var canvas = document.getElementById('gameCanvas');
+            var ctx = canvas.getContext('2d');
+            var w;
+            var h;
+            var tw;
+            var th;
+
+            function setSize() {
+                w = canvas.width = canvas.clientWidth;
+                h = canvas.height = canvas.clientHeight;
+                tw = Math.floor(w/xTiles);
+                th = Math.floor(h/yTiles);
+                ctx.font = th/2 + "pt Comic Sans MS";
+            }
+
+            setSize();
+            ctx.textAlign = 'center';
+            var board = [];
+            var requestAnimationFrameID;
+            var gameOver = false;
+
+            function newTile(nr) {
+                return {
+                    nr: nr || Math.ceil(Math.random()*4),
+                    offset: 0,
+                    distance: 0
+                };
+            }
+
+            for(var x=0; x<xTiles; x++) {
+                board[x] = [];
+                for(var y=0; y<yTiles; y++) {
+                    board[x][y] = newTile();
+                }
+            }
+
+            drawBoard();
+
+            function drawBoard(elapsed) {
+                elapsed = elapsed || 0;
+                ctx.fillStyle = "#000000";
+                ctx.fillRect(0, 0, w, h);
+                var countAnimated = 0;
+                for(var x=0; x<xTiles; x++) {
+                    for(var y=0; y<yTiles; y++) {
+                        var t = board[x][y];
+                        if(!t) continue;
+                        var offset = Math.max(t.offset,0);
+                        if(offset > 0) {
+                            t.offset -= (t.distance/10)*(elapsed/16.666);
+                            countAnimated++;
+                        }
+                        ctx.fillStyle = bgcolors[t.nr];
+                        ctx.fillRect(x*tw+2, y*th-offset+2, tw-2, th-2);
+                        ctx.fillStyle = fgcolors[t.nr];
+                        ctx.fillText(""+t.nr,x*tw+tw/2,(y*th+th*0.75)-offset);
+                    }
+                }
+                if(gameOver) {
+                    ctx.font = h/10 + "pt Comic Sans MS";
+                    ctx.fillStyle = "white";
+                    ctx.fillText("Game Over",w/2+2,h/2+2);
+                    ctx.fillStyle = "blue";
+                    ctx.fillText("Game Over",w/2,h/2);
+                }
+                if(countAnimated == 0)
+                    cancelAnimationFrame(requestAnimationFrameID);
+            }
+
+            var lastTime = 0;
+
+            function animate(time) {
+                requestAnimationFrameID = requestAnimationFrame(animate);
+                if(time-lastTime < 1300)
+                    drawBoard(time-lastTime);
+                lastTime = time;
+            }
+
+            function removeTileAndNeighbors(x, y, nr) {
+                if(x<0 || x>xTiles-1 || y<0 || y>yTiles-1 || !board[x][y] || board[x][y].nr != nr)
+                    return 0;
+                var count = 1;
+                board[x][y] = undefined;
+                count += removeTileAndNeighbors(x+1,y,nr);
+                count += removeTileAndNeighbors(x-1,y,nr);
+                count += removeTileAndNeighbors(x,y+1,nr);
+                count += removeTileAndNeighbors(x,y-1,nr);
+                return count;
+            }
+
+            function click(x,y) {
+                if(!board[x][y]) return;
+                var nr = board[x][y].nr;
+                if(removeTileAndNeighbors(x, y, nr) === 1) {
+                    board[x][y] = newTile(nr);
+                    return;
+                }
+                board[x][y] = newTile(nr+1);
+                popSound.volume = Math.min(nr / 10, 1.0);
+                popSound.currentTime = 0;
+                popSound.play();
+                compactBoard();
+                animate();
+                gameOver = checkEnd();
+            }
+
+            canvas.addEventListener('mousedown', function(event) {
+                var rect = canvas.getBoundingClientRect();
+                var ex = event.clientX - rect.left;
+                var ey = event.clientY - rect.top;
+                var x = Math.floor(ex / tw);
+                var y = Math.floor(ey / th);
+                if(x >= 0 && x < xTiles && y >= 0 && y < yTiles) {
+                    click(x, y);
+                }
+            });
+
+            canvas.addEventListener('touchstart', function(evt) {
+                evt.preventDefault();
+                var touches = evt.changedTouches;
+                var rect = canvas.getBoundingClientRect();
+                var ex = touches[0].clientX - rect.left;
+                var ey = touches[0].clientY - rect.top;
+                var x = Math.floor(ex / tw);
+                var y = Math.floor(ey / th);
+                if(x >= 0 && x < xTiles && y >= 0 && y < yTiles) {
+                    click(x, y);
+                }
+            });
+
+            function countMissingBelow(x,ystart) {
+                return board[x].reduce(function(p,c,i){return (i>ystart)&&!c?p+1:p;},0);
+            }
+
+            function moveDown(tile, distanceInTiles) {
+                tile.offset = distanceInTiles*th;
+                tile.distance = distanceInTiles*th;
+                return tile;
+            }
+
+            function compactBoard() {
+                for(var x=0; x<xTiles; x++) {
+                    for(var y=yTiles-1; y>=0; y--) {
+                        if(board[x][y]) {
+                            var m = countMissingBelow(x,y);
+                            if(m > 0) {
+                                board[x][y+m] = moveDown(board[x][y], m);
+                                board[x][y] = undefined;
+                            }
+                        }
+                    }
+                    for(var i=0, m = countMissingBelow(x,-1); i<m; i++) {
+                        board[x][-1+m-i] = moveDown(newTile(), m);
+                    }
+                }
+            }
+
+            function getNr(x,y) {
+                return board[x] && board[x][y] && board[x][y].nr;
+            }
+
+            function checkEnd() {
+                for(var x=0; x<xTiles; x++) {
+                    for(var y=0; y<yTiles; y++) {
+                        var nr = board[x][y].nr;
+                        if(nr == getNr(x+1,y)
+                        ||  nr == getNr(x-1,y)
+                        ||  nr == getNr(x,y+1)
+                        ||  nr == getNr(x,y-1))
+                            return false;
+                    }
+                }
+                return true;
+            }
+
+            window.addEventListener('resize', function() {
+                setSize();
+                drawBoard();
+            });
+        });
+    </script>
+</body>
+</html>

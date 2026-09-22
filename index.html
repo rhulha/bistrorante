@@ -10,22 +10,23 @@ title: "Michelangelo – Bistrorante & Pizzeria in Bad Salzschlirf"
         </div>
     </section>
 
-    <!-- CMS:aktuelles -->
+    {%- if site.announcements.entries.length %}
     <section class="section aktuelles-section">
         <div class="container">
             <h2 class="section-title center">Aktuelles</h2>
             <div class="aktuelles-cards">
                 <div class="aktuelles-card">
-                    <div class="aktuelles-label">Ferienzeiten</div>
+                    <div class="aktuelles-label">{{ site.announcements.label }}</div>
                     <ul class="aktuelles-list">
-                        <li><span class="aktuelles-day">Mittwoch</span> <span class="aktuelles-info">Ruhetag</span></li>
-                        <li><span class="aktuelles-day">Sonntag Mittag</span> <span class="aktuelles-info">geschlossen (kein Mittagstisch)</span></li>
+                        {%- for e in site.announcements.entries %}
+                        <li><span class="aktuelles-day">{{ e.day }}</span> <span class="aktuelles-info">{{ e.info }}</span></li>
+                        {%- endfor %}
                     </ul>
                 </div>
             </div>
         </div>
     </section>
-    <!-- /CMS:aktuelles -->
+    {%- endif %}
 
     <section class="section about">
         <div class="container">
@@ -89,14 +90,14 @@ title: "Michelangelo – Bistrorante & Pizzeria in Bad Salzschlirf"
             <div class="hours-grid">
                 <div>
                     <h2 class="section-title">Öffnungszeiten</h2>
-                    <!-- CMS:hours -->
                     <table class="hours-table">
-                        <tr><td>Montag, Dienstag, Donnerstag – Samstag</td><td>17:30 – 22:00</td></tr>
-                        <tr><td>Mittwoch</td><td>Ruhetag</td></tr>
-                        <tr><td>Sonntag</td><td>17:30 – 22:00 <small>(Mittag geschlossen)</small></td></tr>
+                        {%- for r in site.hours.rows %}
+                        <tr><td>{{ r.days }}</td><td>{{ r.time }}{% if r.suffix %} <small>{{ r.suffix }}</small>{% endif %}</td></tr>
+                        {%- endfor %}
                     </table>
-                    <p style="margin-top: 8px; color: var(--color-text-light); font-size: 0.9rem;">Warme Küche bis 21:30</p>
-                    <!-- /CMS:hours -->
+                    {%- if site.hours.note %}
+                    <p style="margin-top: 8px; color: var(--color-text-light); font-size: 0.9rem;">{{ site.hours.note }}</p>
+                    {%- endif %}
                 </div>
                 <div>
                     <h2 class="section-title">So finden Sie uns</h2>

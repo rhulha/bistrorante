@@ -45,15 +45,19 @@ title: "Kontakt & Anfahrt – Michelangelo"
                         <div class="contact-icon">🕐</div>
                         <div>
                             <h4>Öffnungszeiten</h4>
-                            <!-- CMS:hours-contact -->
-                            <p>Mo, Di, Do–Sa: 17:30 – 22:00<br>
-                            Mi: Ruhetag<br>
-                            So: 17:30 – 22:00 <small>(Mittag geschlossen)</small><br>
-                            <small>Warme Küche bis 21:30</small></p>
-                            <p style="margin-top:8px; color:var(--color-primary); font-size:0.88rem;"><strong>Ferienzeiten:</strong><br>
-                            Mittwoch Ruhetag<br>
-                            Sonntag Mittag geschlossen (kein Mittagstisch)</p>
-                            <!-- /CMS:hours-contact -->
+                            <p>
+                            {%- for r in site.hours.rows %}
+                            {{ r.daysShort }}: {{ r.time }}{% if r.suffix %} <small>{{ r.suffix }}</small>{% endif %}{% if not loop.last or site.hours.note %}<br>{% endif %}
+                            {%- endfor %}
+                            {%- if site.hours.note %}
+                            <small>{{ site.hours.note }}</small>
+                            {%- endif %}</p>
+                            {%- if site.announcements.entries.length %}
+                            <p style="margin-top:8px; color:var(--color-primary); font-size:0.88rem;"><strong>{{ site.announcements.label }}:</strong>
+                            {%- for e in site.announcements.entries %}<br>
+                            {{ e.day }} {{ e.info }}
+                            {%- endfor %}</p>
+                            {%- endif %}
                         </div>
                     </div>
                 </div>
@@ -68,11 +72,9 @@ title: "Kontakt & Anfahrt – Michelangelo"
                     <a href="tel:+496648916399" class="reservation-phone">(06648) 916399</a>
                     <div class="reservation-hours">
                         <h4>Erreichbarkeit</h4>
-                        <!-- CMS:hours-reservation -->
-                        <p>Mo, Di, Do–Sa: 17:30 – 22:00</p>
-                        <p>Mi: Ruhetag</p>
-                        <p>So: 17:30 – 22:00 <small>(Mittag geschlossen)</small></p>
-                        <!-- /CMS:hours-reservation -->
+                        {%- for r in site.hours.rows %}
+                        <p>{{ r.daysShort }}: {{ r.time }}{% if r.suffix %} <small>{{ r.suffix }}</small>{% endif %}</p>
+                        {%- endfor %}
                     </div>
                 </div>
 

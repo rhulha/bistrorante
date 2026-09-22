@@ -1,0 +1,471 @@
+{
+  "categories": [
+    {
+      "id": "focaccia",
+      "label": "Focaccie & Bruschette",
+      "items": [
+        {
+          "nr": "01",
+          "name": "Focaccia",
+          "desc": "Pizzabrot mit Olivenöl und Oregano",
+          "allergens": "20",
+          "price": 5
+        },
+        {
+          "nr": "02",
+          "name": "Focaccia Paesana",
+          "desc": "Pizzabrot mit Olivenöl, Oregano und Parmesankäse",
+          "allergens": "17, 20",
+          "price": 7
+        },
+        {
+          "nr": "126",
+          "name": "Focaccia del Contadino",
+          "desc": "Pizzabrot mit Mozzarella, Oregano, Zwiebeln, Parmesankäse",
+          "allergens": "17, 20",
+          "price": 8
+        },
+        {
+          "nr": "03",
+          "name": "Bruschetta Caprese",
+          "desc": "Pizzabrot mit Olivenöl, Oregano, Mozzarella, fr. Tomaten",
+          "allergens": "17, 20",
+          "price": 9.5
+        },
+        {
+          "nr": "117",
+          "name": "Bruschetta Cilentana",
+          "desc": "Pizzabrot mit fr. Tomaten, gem. Salat, geraspeltem Parmesankäse, Knoblauch, im Holzofen zubereitetes fr. Gemüse, Mozzarella, Olivenöl, Basilico und Oregano",
+          "allergens": "17, 20",
+          "price": 9.5
+        }
+      ]
+    },
+    {
+      "id": "pizza",
+      "label": "Pizza",
+      "info": "<h4 style=\"margin-bottom: 12px;\">125 Familienpizza ca. 40 cm</h4>\n<p>Wählen Sie eine Pizza nach Ihrer Wahl und deren Preis × 2,5<br>\nz.B. Pizza Nr. 15: 10 € × 2,5 = 25 €</p>\n<h4 style=\"margin-top: 16px; margin-bottom: 8px;\">Zusätzlicher Belag</h4>\n<p><strong>1,00 €</strong> – Scharfe Peperoni, Knoblauch</p>\n<p><strong>1,50 €</strong> – Salami, Peperoniwurst, Schinken, Eier, Oliven, Zwiebeln, fr. Paprika, fr. Champignons, Broccoli, Spinat, Ananas, Artischocken, Mais, Zucchini, Kapern, grüne Peperoni, fr. Tomaten, Mozzarella, Kräuterbutter</p>\n<p><strong>2,00 €</strong> – Thunfisch, Sardellen, Parmesankäse, Schafskäse, Rucola, Aubergine, Gorgonzola, Krabben, Parmaschinken</p>\n<p style=\"margin-top: 8px;\"><strong>Aufpreis Vollkornteig auf Anfrage:</strong> 1,00 € · <strong>Aufpreis Glutenfreiteig auf Anfrage:</strong> 3,00 €</p>\n<p style=\"font-size: 0.9em; margin-top: 8px;\">Glutenfreie Gerichte bitte mindestens einen Tag vorbestellen.</p>",
+      "items": [
+        {
+          "nr": "04",
+          "name": "Pizza Regina Margherita",
+          "desc": "Tomaten, Mozzarella, Basilico",
+          "allergens": "17, 20",
+          "price": 8.5
+        },
+        {
+          "nr": "05",
+          "name": "Pizza Tonno e Cipolle",
+          "desc": "Tomatensoße, Mozzarella, Zwiebeln, Thunfisch",
+          "allergens": "17, 19, 20",
+          "price": 10
+        },
+        {
+          "nr": "06",
+          "name": "Pizza Prosciutto",
+          "desc": "Tomatensoße, Mozzarella, Schinken",
+          "allergens": "2, 3, 4, 9, 17, 20",
+          "price": 9
+        },
+        {
+          "nr": "07",
+          "name": "Pizza al Salame",
+          "desc": "Tomatensoße, Mozzarella, Salami",
+          "allergens": "2, 3, 17, 20",
+          "price": 9
+        },
+        {
+          "nr": "08",
+          "name": "Pizza Peperoni",
+          "desc": "Tomatensoße, Mozzarella, Peperoniwurst – Mild",
+          "allergens": "2, 3, 17, 20",
+          "price": 9.5
+        },
+        {
+          "nr": "10",
+          "name": "Pizza Hawaii",
+          "desc": "Tomate, Mozzarella, Schinken, Ananas",
+          "allergens": "2, 3, 4, 9, 17, 20",
+          "price": 9.5
+        },
+        {
+          "nr": "11",
+          "name": "Pizza Napoleone",
+          "desc": "Tomatensoße, Mozzarella, Artischocken, Oliven, Schinken",
+          "allergens": "2, 3, 4, 9, 17, 20",
+          "price": 10
+        },
+        {
+          "nr": "12",
+          "name": "Pizza alla Zingara",
+          "desc": "Tomatensoße, Mozzarella, Salami, Schinken, fr. Paprika, Zwiebeln",
+          "allergens": "2, 3, 4, 9, 17, 20",
+          "price": 10.5
+        },
+        {
+          "nr": "13",
+          "name": "Pizza Braccio di Ferro",
+          "desc": "Tomatensoße, Mozzarella, Spinat, Parmesankäse, Knoblauch",
+          "allergens": "17, 20",
+          "price": 10
+        },
+        {
+          "nr": "14",
+          "name": "Pizza Maruzzella",
+          "desc": "Tomatensoße, Mozzarella, Schinken, fr. Champignons",
+          "allergens": "2, 3, 4, 9, 17, 20",
+          "price": 9.5
+        },
+        {
+          "nr": "15",
+          "name": "Pizza Pulcinella",
+          "desc": "Tomatensoße, Mozzarella, Salami, Schinken, fr. Champignons",
+          "allergens": "2, 3, 4, 9, 17, 20",
+          "price": 10
+        },
+        {
+          "nr": "16",
+          "name": "Pizza Calzone",
+          "desc": "Tomatensoße, Mozzarella, fr. Champignons, Schinken, Salami, fr. Paprika",
+          "allergens": "2, 3, 4, 9, 17, 20",
+          "price": 10.5
+        },
+        {
+          "nr": "17",
+          "name": "Pizza Ortolana",
+          "desc": "Tomatensoße, Mozzarella, Artischocken, fr. Paprika, Broccoli, fr. Champignons, Knoblauch",
+          "allergens": "17, 20",
+          "price": 10.5
+        },
+        {
+          "nr": "18",
+          "name": "Pizza del Marinaio",
+          "desc": "Tomatensoße, Mozzarella, Meeresfrüchte, Knoblauch",
+          "allergens": "17, 18, 19, 20",
+          "price": 13.5
+        },
+        {
+          "nr": "19",
+          "name": "Pizza Norvegese",
+          "desc": "Sahnesoße, Mozzarella, Zwiebeln, Lachsfilet, Rucola",
+          "allergens": "17, 19, 20",
+          "price": 13.5
+        },
+        {
+          "nr": "21",
+          "name": "Pizza Vulcano",
+          "desc": "Sahnesoße, Mozzarella, Peperoniwurst, Schinken, fr. Champignons – Mild",
+          "allergens": "2, 3, 4, 9, 17, 20",
+          "price": 11.5
+        },
+        {
+          "nr": "22",
+          "name": "Pizza Primavera",
+          "desc": "Sahnesoße, Mozzarella, fr. Tomaten, fr. Salat, Parmaschinken, geraspeltem Parmesankäse",
+          "allergens": "17, 20",
+          "price": 12.5
+        },
+        {
+          "nr": "23",
+          "name": "Pizza Mediterranea",
+          "desc": "Tomatensoße, fr. Tomaten, Mozzarella, Rucolasalat, Parmaschinken, geraspeltem Parmesankäse",
+          "allergens": "17, 20",
+          "price": 12.5
+        },
+        {
+          "nr": "24",
+          "name": "Pizza Dolomiti",
+          "desc": "Tomatensoße, Mozzarella, Rucolasalat, Bresaolaschinken, geraspeltem Parmesankäse",
+          "allergens": "17, 20",
+          "price": 12.5
+        },
+        {
+          "nr": "25",
+          "name": "Pizza 4 Formaggi",
+          "desc": "Sahnesoße, 4 Käsesorten",
+          "allergens": "17, 20",
+          "price": 11
+        },
+        {
+          "nr": "26",
+          "name": "Pizza 4 Stagioni",
+          "desc": "Tomatensoße, Mozzarella, fr. Champignons, fr. Paprika, Schinken, Artischocken",
+          "allergens": "2, 3, 4, 9, 17, 20",
+          "price": 10
+        }
+      ]
+    },
+    {
+      "id": "wrap",
+      "label": "Wrap",
+      "items": [
+        {
+          "nr": "137",
+          "name": "Wrap Tonno",
+          "desc": "Wrap gefüllt mit Mozzarella, Thunfisch, Gemüse, Salat, Zwiebeln und Mayonnaisesoße",
+          "allergens": "2, 17, 19, 20",
+          "price": 11
+        },
+        {
+          "nr": "138",
+          "name": "Wrap Pollo",
+          "desc": "Wrap gefüllt mit fr. gegrillt Hühnerbrustfilet, Gemüse, Salat, Zwiebeln und Mayonnaisesoße",
+          "allergens": "2, 17, 20",
+          "price": 13
+        },
+        {
+          "nr": "139",
+          "name": "Wrap Vegetale",
+          "desc": "Wrap gefüllt mit gegrilltem Gemüse, Salat, Zwiebeln und Mayonnaisesoße",
+          "allergens": "2, 17, 20",
+          "price": 11
+        }
+      ]
+    },
+    {
+      "id": "salate",
+      "label": "Salate & Gemüse",
+      "note": "Alle Salate werden auf italienische Art mit Balsamicoessig (1, 5) und kaltgepresstem Olivenöl verfeinert. Auf Wunsch auch mit Joghurtdressing. · Extra Brot: 2,50 €",
+      "items": [
+        {
+          "nr": "108",
+          "name": "Insalatina di Contorno",
+          "desc": "Kleiner gemischter Salat",
+          "allergens": "",
+          "price": 5.5
+        },
+        {
+          "nr": "60",
+          "name": "Insalata Mista",
+          "desc": "Salat, Tomaten, Gurken, Paprika, Zwiebeln",
+          "allergens": "",
+          "price": 7.5
+        },
+        {
+          "nr": "61",
+          "name": "Insalata Capricciosa",
+          "desc": "Salat, Tomaten, Käse, Gurken, Paprika, Thunfisch, Eier, Schinken",
+          "allergens": "2, 3, 4, 9, 17, 19, 20",
+          "price": 9.5
+        },
+        {
+          "nr": "62",
+          "name": "Insalata Riva del Garda",
+          "desc": "Salat, Tomaten, Gurken, Paprika, Oliven, Schafskäse, Zwiebeln, gr. Peperoni",
+          "allergens": "6, 17, 20",
+          "price": 10.5
+        },
+        {
+          "nr": "63",
+          "name": "Insalata della Casa",
+          "desc": "Salat, Tomaten, Gurken, Paprika, fr. gegrillt Hühnerbrustfilet-Streifen",
+          "allergens": "20",
+          "price": 12.5
+        },
+        {
+          "nr": "64",
+          "name": "Insalata del Saraceno",
+          "desc": "Salat, Tomaten, Gurken, Paprika, Zwiebeln, gr. Peperoni, Artischocken, Oliven, Thunfisch",
+          "allergens": "6, 19, 20",
+          "price": 10.5
+        },
+        {
+          "nr": "65",
+          "name": "Insalata di Pomodori, Cipolle e Tonno",
+          "desc": "Tomaten, Zwiebeln, Thunfisch",
+          "allergens": "19, 20",
+          "price": 9.5
+        },
+        {
+          "nr": "128",
+          "name": "Insalata Paestum",
+          "desc": "Salat, Zwiebeln, Oliven, Schafskäse, gr. Peperoni",
+          "allergens": "6, 20",
+          "price": 9.5
+        },
+        {
+          "nr": "115",
+          "name": "Verdure al Forno",
+          "desc": "Verschiedene Arten von fr. Gemüsen mit Kartoffeln im Holzofen zubereitet",
+          "allergens": "",
+          "price": 12.5
+        }
+      ]
+    },
+    {
+      "id": "vorspeisen",
+      "label": "Vorspeisen",
+      "note": "Extra Brot für Vorspeisen: 2,50 €",
+      "items": [
+        {
+          "nr": "68",
+          "name": "Antipasto Michelangelo",
+          "desc": "Italienischer Vorspeisenteller",
+          "allergens": "6, 15, 17, 21",
+          "price": 11.5
+        },
+        {
+          "nr": "72",
+          "name": "Antipasto di Mare",
+          "desc": "Meeresfrüchtesalat",
+          "allergens": "18, 19",
+          "price": 11.5
+        },
+        {
+          "nr": "140",
+          "name": "Carpaccio di Bresaola",
+          "desc": "Carpaccio vom Bresaolaschinken",
+          "allergens": "",
+          "price": 10.5
+        },
+        {
+          "nr": "141",
+          "name": "Antipasto Vegetale",
+          "desc": "Vegetarischer Vorspeisenteller",
+          "allergens": "6, 17",
+          "price": 10.5
+        },
+        {
+          "nr": "73",
+          "name": "Antipasto Caprese",
+          "desc": "Tomaten, Mozzarella, Basilikum",
+          "allergens": "17",
+          "price": 10.5
+        },
+        {
+          "nr": "103",
+          "name": "Panini di Pizza",
+          "desc": "Pizzabrötchen mit hausgemachter Kräuterbutter",
+          "allergens": "",
+          "price": 5.5
+        }
+      ]
+    },
+    {
+      "id": "pasta",
+      "label": "Nudelgerichte",
+      "items": [
+        {
+          "nr": "75",
+          "name": "Tortellini alla Panna",
+          "desc": "Tortellini mit Schinken in Sahnesoße",
+          "allergens": "2, 3, 4, 9, 17, 20",
+          "price": 10
+        },
+        {
+          "nr": "76",
+          "name": "Tortellini Gratinati",
+          "desc": "Tortellini mit Schinken, Erbsen in Hackfleischsahnesoße, überbacken",
+          "allergens": "2, 3, 4, 9, 17, 20",
+          "price": 10.5
+        },
+        {
+          "nr": "78",
+          "name": "Tagliatelle al Salmone",
+          "desc": "Bandnudeln mit Lachs in Tomatensahnesoße",
+          "allergens": "17, 19, 20",
+          "price": 13
+        },
+        {
+          "nr": "79",
+          "name": "Rigatoni all'arrabbiata",
+          "desc": "Röhrennudeln mit Knoblauch und Tomatensoße – Scharf",
+          "allergens": "20",
+          "price": 10
+        },
+        {
+          "nr": "80",
+          "name": "Rigatoni al Curry",
+          "desc": "Röhrennudeln mit fr. Champignons in Currysahnesoße",
+          "allergens": "17, 20",
+          "price": 10
+        },
+        {
+          "nr": "81",
+          "name": "Gnocchi alla Sorrentina",
+          "desc": "Kartoffelnudeln mit Mozzarella und Tomatensoße, überbacken",
+          "allergens": "17, 20",
+          "price": 10
+        },
+        {
+          "nr": "82",
+          "name": "Rigatoni ai 4 Formaggi",
+          "desc": "Rigatoni mit 4 Käsesorten",
+          "allergens": "17, 20",
+          "price": 10.5
+        },
+        {
+          "nr": "83",
+          "name": "Rigatoni al Forno",
+          "desc": "Rigatoni mit Eier, Schinken, Mozzarella in Hackfleischsahnesoße, überbacken",
+          "allergens": "2, 3, 4, 9, 17, 20, 22",
+          "price": 10.5
+        },
+        {
+          "nr": "112",
+          "name": "Rigatoni Cardinale",
+          "desc": "Mit Parmaschinken, Steinpilzen und geraspeltem Parmesankäse in Rosésoße",
+          "allergens": "17, 20",
+          "price": 12.5
+        },
+        {
+          "nr": "85",
+          "name": "Spaghetti del Carbonaro",
+          "desc": "Spaghetti mit Speck, Parmesankäse und Eier in Sahnesoße",
+          "allergens": "17, 20, 22",
+          "price": 11.5
+        },
+        {
+          "nr": "86",
+          "name": "Spaghetti Bolognese",
+          "desc": "Spaghetti mit Hackfleischsoße",
+          "allergens": "20",
+          "price": 10
+        },
+        {
+          "nr": "87",
+          "name": "Spaghetti Aglio Olio e Peperoncino",
+          "desc": "Spaghetti mit Knoblauch, Olivenöl und scharfen Peperoni",
+          "allergens": "20",
+          "price": 10
+        },
+        {
+          "nr": "88",
+          "name": "Lasagna al Forno",
+          "desc": "Mit Bechamelsoße, Hackfleischsoße, Schinken und Mozzarella, überbacken",
+          "allergens": "2, 3, 4, 9, 17, 20",
+          "price": 11
+        }
+      ]
+    },
+    {
+      "id": "carne",
+      "label": "Fleisch- & Fischgerichte",
+      "short": "Fleisch & Fisch",
+      "note": "Alle Fleisch- und Fischgerichte werden mit fr. Gemüse und Kartoffeln im Holzofen zubereitet, mit kaltgepresstem Olivenöl und italienischen Kräutern aus eigener Herstellung serviert.<br>\nWeitere Spezialitäten finden Sie in unserem Bistrorante!",
+      "items": [
+        {
+          "nr": "91",
+          "name": "Petto di Pollo alla Panna",
+          "desc": "Hühnerbrustfilet mit fr. Champignons in Rahmsoße",
+          "allergens": "17",
+          "price": 18.5
+        },
+        {
+          "nr": "95",
+          "name": "Bistecca di Vitello alle Cipolle",
+          "desc": "Gegrilltes Rumpsteak mit gebratenen Zwiebeln",
+          "allergens": "",
+          "price": 24.5
+        },
+        {
+          "nr": "97",
+          "name": "Frittura di Calamari",
+          "desc": "Gebratene Calamari",
+          "allergens": "19, 20",
+          "price": 19.5
+        }
+      ]
+    }
+  ]
+}

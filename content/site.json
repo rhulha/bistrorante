@@ -1,0 +1,38 @@
+{
+  "hours": {
+    "rows": [
+      {
+        "days": "Montag, Dienstag, Donnerstag – Samstag",
+        "daysShort": "Mo, Di, Do–Sa",
+        "time": "17:30 – 22:00",
+        "suffix": ""
+      },
+      {
+        "days": "Mittwoch",
+        "daysShort": "Mi",
+        "time": "Ruhetag",
+        "suffix": ""
+      },
+      {
+        "days": "Sonntag",
+        "daysShort": "So",
+        "time": "17:30 – 22:00",
+        "suffix": "(Mittag geschlossen)"
+      }
+    ],
+    "note": "Warme Küche bis 21:30"
+  },
+  "announcements": {
+    "label": "Ferienzeiten",
+    "entries": [
+      {
+        "day": "Mittwoch",
+        "info": "Ruhetag"
+      },
+      {
+        "day": "Sonntag Mittag",
+        "info": "geschlossen (kein Mittagstisch)"
+      }
+    ]
+  }
+}
